@@ -1,0 +1,36 @@
+学号：
+姓名：
+Python / NumPy 版本：
+CPU / 操作系统：
+是否使用仓库基线（如重训，请说明）：
+
+一、量化函数
+附上完成后的 student_task.py，以及运行检查输出。
+用一句话解释 scale、round、clip 和反量化。
+
+二、位宽对照
+附 results_bits/results.csv。
+填写：方法 / 位宽 / 准确率 / 相比 FP32 下降百分点 / logit MSE / 实际文件大小。
+FP32：
+RTN / 4 bit：
+GPTQ-edu / 4 bit：
+RTN / 2 bit：
+GPTQ-edu / 2 bit：
+
+三、校准样本对照
+附 cal16/results.csv 与 cal128/results.csv。
+相同位宽下，RTN 是否保持一致？
+GPTQ-edu / AWQ-inspired 的误差与准确率如何变化？
+为什么不能保证校准样本越多，测试准确率一定越高？
+
+四、三条结论（每条至少引用两个数据，说明比较条件）
+1.
+2.
+3.
+
+五、实验边界
+本实验的模型与真实 LLM 有何不同？
+文件压缩、运行内存和推理速度为什么不能混为一谈？
+如果要判断真实 GPU 加速，还应记录什么？
+
+提交：本报告、完成后的 student_task.py、三份结果 CSV。

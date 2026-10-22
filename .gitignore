@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+/results*/
+/cal16/
+/cal128/
+*.qbin
+.DS_Store

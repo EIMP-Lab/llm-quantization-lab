@@ -1,0 +1,22 @@
+数据集：Optical Recognition of Handwritten Digits
+作者：E. Alpaydin, C. Kaynak (1998)
+来源：UCI Machine Learning Repository
+DOI：https://doi.org/10.24432/C50P49
+页面：https://archive.ics.uci.edu/dataset/80/optical+recognition+of+handwritten+digits
+下载：https://archive.ics.uci.edu/static/public/80/optical+recognition+of+handwritten+digits.zip
+许可：Creative Commons Attribution 4.0 International (CC BY 4.0)
+许可链接：https://creativecommons.org/licenses/by/4.0/
+
+optdigits.tra 和 optdigits.tes 按原样附带，未修改数据值。
+运行时将像素除以 16，并只在官方训练集内部按类别划分训练 / 校准 / 验证集。
+官方测试集独立保留。没有把 sklearn 的 1797 个样本重新混分成训练与测试。
+本课程 baseline.npz 由随附 NumPy 训练代码在上述训练子集上生成。
+
+算法参考：
+GPTQ 论文：https://arxiv.org/abs/2210.17323
+GPTQ 原实现：https://github.com/IST-DASLab/gptq
+AWQ 论文：https://arxiv.org/abs/2306.00978
+AWQ 原实现：https://github.com/mit-han-lab/llm-awq
+SmoothQuant 论文：https://arxiv.org/abs/2211.10438
+
+lab.py 为本课程的独立教学实现。GPTQ-edu 与 AWQ-inspired 不等同于完整算法复现。
