@@ -28,6 +28,3 @@ if __name__ == '__main__':
     np.testing.assert_array_equal(q[:, 0], [5, -2, 7])
     np.testing.assert_allclose(w_hat, q * scale, rtol=1e-6)
     print('检查通过！\n整数编码：\n', q, '\n尺度：', scale, '\n反量化：\n', w_hat)
-    from lab import gradient_descent, toy_compensation
-    print('梯度下降：', gradient_descent())
-    print('补偿例题：', toy_compensation())
